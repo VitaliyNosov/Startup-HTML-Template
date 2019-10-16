@@ -4,7 +4,7 @@
 	<img src="https://image.ibb.co/nDZkQT/Githube_Cover.jpg" alt="Start HTML Template">
 </p>
 
-<p>Before installing, be sure to check for updates using the command: ncu !!!</p>
+<h4>Before installing, be sure to check for updates using the command: ncu !!!</h4>
 
 <p>Startup HTML Template is all-inclusive start HTML5 template with Bootstrap 4 (grid & reboot), Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Rsync and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
 
