@@ -1,4 +1,4 @@
-<h1><strong>Startup HTML Template</strong> <br>Startup HTML template based on Gulp & Bootstrap 4</h1>
+<h1><strong>Startup HTML Template: </strong></h1> <br><h2>Startup HTML template based on Gulp & Bootstrap 4</h2>
 
 <p>
 	<img src="https://image.ibb.co/nDZkQT/Githube_Cover.jpg" alt="Start HTML Template">
