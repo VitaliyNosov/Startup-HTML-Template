@@ -3,7 +3,7 @@ $(function() {
 	$("#tabs").tabs();
 
 
-	
+
 
 	$('#li').hover(function () {
 		console.log('vfdvdvf');
@@ -13,6 +13,8 @@ $(function() {
 
 
 	$(".popup").magnificPopup();
+
+	
 
 });
 
