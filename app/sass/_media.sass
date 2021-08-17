@@ -5,13 +5,65 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+    .topmenu
+        display: none 
+    .menu
+        display: flex
+        justify-content: center
+
+    .menu-block
+        display: flex
+        flex-direction: column
+
+    .mobile-menu-button
+        margin-top: 20px
+        margin-bottom: 20px
+        display: block
+        i 
+            color: #FFDA00
+            font-size: 28px
+    .mobile-menu
+        margin-top: 20px
+        margin-bottom: 20px
+        display: none
+        li 
+            a
+                font-size: 20px
+                text-decoration: none
+                &:hover
+                    color: #5DBDFB
+        
+    .logo-block
+        width: 100%
+        display: flex
+        justify-content: center
+        margin-top: 20px
+        margin-bottom: 20px
+    
+    .block-button
+        margin-bottom: 50px
+
+    .blog-name-body
+        margin-top: 50px
 
 // ≥992px
 +media-breakpoint-down(md)
 
 // ≥768px
 +media-breakpoint-down(sm)
+    .menu
+        display: flex
+        flex-direction: column
+    .mobile-menu-button
+        margin-top: 0px
+        margin-bottom: 20px
 
+    .block-content-info
+        padding-top: 0px
+    
+    .block-button
+        a 
+            width: 100%
 // ≥576px
 +media-breakpoint-down(xs)
 

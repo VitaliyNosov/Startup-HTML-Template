@@ -20,7 +20,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
-	background-color: #0E1621
+	background-color: #fff
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -45,26 +45,377 @@ b, strong
 // my style
 
 .wrapper 
+	max-width: 1440px
+	min-height: 593px
+	overflow: hidden
+	margin: 0 auto
+	background-color: #FFDA00
+
+
+// menu
+
+.header-menu
 	width: 100%
-	height: 100vh
+	min-height: 62px
+	background-color: #fff
+	font-size: 15px
+
+.header-menu-shadow
+	width: 100%
+	height: 7px
+	margin-top: -7px
+	background-color: #fff
+	box-shadow: -1px 7px 5px -2px rgba(135, 135, 135, 0.4)
+
+.menu-block
+	width: 100%
+	display: flex
+	align-items: center
+
+.logo-block
+	width: 20%
+	height: 100%
+	display: flex
+	justify-content: flex-start
+	align-items: center
+
+.menu
+	width: 80%
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: flex-end
+
+.down 
+	img 
+		margin-left: 10px
+nav
+  text-align: center
+  ul
+    list-style: none
+    margin: 0
+    padding: 0
+  a
+    text-decoration: none
+    display: block
+    color: #707683
+
+.topmenu 
+	margin-top: 4px
+	li
+		border-bottom: 4px solid rgba(255, 255, 255, 0.0)
+		display: inline-block
+		&:hover
+			color: green
+			border-bottom: 4px solid #5DBDFB		
+		a 
+			position: relative
+    		padding: 10px 15px
+			&:hover 
+				color: #1F1C4E 
+				text-decoration: none
+
+
+.down 
+	img 
+		margin-right: 0.5px
+
+.menu-link-one 
+	margin-left: -2px				
+
+.menu-link-two
+	margin-left: -3px 
+
+.menu-link-three
+	margin-left: -3px
+
+.menu-link-four
+	margin-right: 13px 
+
+.topmenu
+  > li
+    display: inline-block
+    position: relative
+    > a
+      position: relative
+      padding: 17px 14.5px
+  li:hover a:before
+    transform: translate(-50%, 0)
+    opacity: 1
+
+.submenu
+	visibility: hidden
+	width: 200px
+	height: 150px
+	background-color: #fff
+	position: absolute
+	z-index: 4
+	left: 63%
+	top: 108%
+	overflow: hidden
+	font-size: 14px
+	display: flex
+	flex-wrap: wrap
+	transform: translate(-50%, 20px)
+	transition: .3s	
+	border-radius: 5px
+	ul 
+		padding: 0px
+		margin: 0px
+	li 
+		list-style: none
+		width: 200px
+		height: 25%
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		padding-left: 15px
+		&:hover 
+			border: none
+			background-color: #F5F5F5
+		a 
+			color: #707683
+			text-decoration: none 
+			width: 100%
+			height: 100%
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			&:hover
+				color: #1F1C4E
+				text-decoration: none
+		
+.topmenu > li:hover .submenu
+  visibility: visible
+  opacity: 1
+  transform: translate(-50%, 0)
+
+.mobile-menu-button
+	display: none
+.mobile-menu
+	display: none
+
+.menu-block-maps 
+	margin-left: 10px
+	margin-right: 10px
+	display: flex
+
+.block-maps-body 
+	width: 35px
+	height: 24px
+	background-color: #F5F5F5
+	display: flex 
+	justify-content: center
+	align-items: center
+	border: 2px solid #EBEBEB
+	border-radius: 3px
+
+.active, .btn:hover 
+	background-color: #fff
+	box-shadow: -4px 5px 9px -2px #e0dcdc
+	border: none
+	cursor: pointer
+	
+
+.menu-block-socials 
+	a 
+		margin-left: 19px
+		color: #707683
+		&:hover
+			color: #1F1C4E
+
+.block-content
+	width: 100%
+	min-height: 531px
+
+.block-content-image 
+	width: 100%
+	height: 531px
 	display: flex
 	justify-content: center
 	align-items: center
-	color: #21A2F1
-	font-size: 45px
+	img 
+		max-width: 100%
 
-.text 
+.block-content-info 
+	width: 100%
+	padding-top: 90px
+	span 
+		color: #fff 
+		font-size: 14px
+		font-weight: 500
+		font-style: normal
+		letter-spacing: 0.1rem 
+		text-transform: uppercase
+		margin-bottom: 5px
+	h1 
+		font-style: normal
+		font-weight: 500
+		font-size: 38px
+		line-height: 70px
+		margin-top: -9px
+		color: #1F1C4E
+
+	p 
+		margin-top: 22px
+		font-style: normal 
+		font-weight: 300 
+		font-size: 18px 
+		line-height: 28px
+
+	a 
+		text-decoration: none 
+		width: 288px
+		min-height: 48px
+		display: flex
+		justify-content: center
+		align-items: center
+		color: #fff
+		background-color: #5DBDFB
+		border-radius: 5px
+		margin-top: 40px
+		font-size: 15px
+		transition: 0.4s linear
+		&:hover
+			background-color: #fff
+			color: #000
+
+.blog-name
+	width: 100%
+	margin-top: 5px
+	border-bottom: 1px solid  #E5E5E5
+
+.blog-button-block
 	width: 100%
 	display: flex
-	justify-content: center
-	align-items: center
-	color: #fff
-	font-size: 35px
-	i 
-		margin-right: 10px
-		font-size: 35px
-		color: #6F3BBA
+	justify-content: start
+	margin-top: 18px
+	margin-bottom: 50px
+	a 
+		min-width: 128px
+		min-height: 18px
+		border: 1px solid #5DBDFB
+		color: #5DBDFB
+		display: flex
+		justify-content: center
+		align-items: center
+		border-radius: 5px
+		font-size: 15px
+		padding: 3px 16px 
+		text-decoration: none
+		transition: 0.4s linear
+		&:hover
+			background-color: #5DBDFB
+			color: #fff
 
+.wrapper-blog-content
+	width: 100%
+	background-color: #fff
+
+.blog-content 
+	margin-top: 39px
+	h2 
+		font-size: 36px
+		color: #1F1C4E
+
+.blog-name
+	span
+		font-size: 12px
+		letter-spacing: 1px
+		color: #5DBDFB 
+		margin-top: 8px
+		font-family: noirpro-medium
+		text-transform: uppercase 
+	h3 
+		font-size: 20px
+		font-family: noirpro-medium 
+		color: #1F1C4E 
+	p 
+		font-size: 14px
+		font-family: noirpro-regular
+		color: #707683
+
+
+.image-body 
+	margin-top: 35px
+	img 
+		border-radius: 5px
+		width: 100%
+
+.blog-category
+	width: 100%
+	display: flex
+	justify-content: space-between
+	margin-top: 10px
+	a
+		font-size: 12px
+		line-height: 14px
+		color: #707683
+		margin-right: 5px
+		font-family: noirpro-regular 
+
+
+.category-name  
+	font-size: 12px
+	letter-spacing: 1px
+	color: #5DBDFB 
+	margin-top: 8px
+	font-family: noirpro-medium
+	text-transform: uppercase
+
+.category-post-name 
+	margin-top: 5px
+
+.category-link 
+	margin-top: 1px
+
+
+.block-text 
+	h3
+		font-size: 20px
+		font-family: noirpro-medium
+		color: #1F1C4E
+		margin-top: 5px
+		line-height: 130%
+	p 
+		font-size: 16px
+		font-family: noirpro-light 
+		line-height: 24px
+		color: #1F1C4E
+		margin-top: 10px
+	
+
+.block-text-data
+	font-size: 14px
+	font-family:  noirpro-regular
+	color: #707683
+	margin-top: 8px
+
+.blog-name-body
+	margin-top: 120px
+
+
+.blog-name 
+	h3 
+		font-size: 20px
+		line-height: 130%
+
+	p 
+		font-size: 14px
+		font-family:  noirpro-regular
+
+.category-post 
+	width: 100%
+	min-height: 29px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	a
+		font-size: 12px
+		line-height: 14px
+		color: #707683
+		margin-right: 5px
+		font-family: noirpro-regular 
 
 
 @import "media" // Always at the end
